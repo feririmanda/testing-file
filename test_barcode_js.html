@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Test Barcode JS</title>
+</head>
+<style>
+table, td, th {
+  border: 1px solid;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+</style>
+<body>
+<h1>Generate barcode with javascript</h1>
+<table>
+	<thead>
+		<tr>
+			<th>No</th>
+			<th>CREGIG</th>
+			<th>Nama Barang</th>
+			<th>Barcode</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>1</td>
+			<td>2013007415</td>
+			<td>KSW D1.0MM KC-28 (15KGS) CO2 GAS SHIELD</td>
+			<td>
+				<svg class="barcode"
+  jsbarcode-format="CODE128"
+  jsbarcode-value="2013007415"
+  jsbarcode-textmargin="0"
+  jsbarcode-fontoptions="bold">
+</svg>
+			</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>2013016310</td>
+			<td>UGS D70 CABLE (ORIGINAL)</td>
+			<td>
+				<svg class="barcode"
+  jsbarcode-format="CODE128"
+  jsbarcode-value="2013016310"
+  jsbarcode-textmargin="0"
+  jsbarcode-fontoptions="bold">
+</svg>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</body>
+</html>
+<script src="https://unpkg.com/jsbarcode@latest/dist/JsBarcode.all.min.js"></script>
+<script type="text/javascript">
+JsBarcode(".barcode").init();
+</script>
